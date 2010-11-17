@@ -70,7 +70,7 @@ module Jekyll
       puts "Configuration from #{config_file}"
     rescue => err
       puts "WARNING: Could not read configuration. Using defaults (and options)."
-      puts "\t" + err
+      puts "\t" #RWB stop error in 1.9 + err
     end
 
     # Merge DEFAULTS < _config.yml < override

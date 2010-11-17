@@ -2,9 +2,10 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
+require 'rubygems'
+require 'jeweler'
+  
 begin
-  gem 'jeweler', '>= 0.11.0'
-  require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "jekyll"
     s.summary = %Q{Jekyll is a simple, blog aware, static site generator.}
